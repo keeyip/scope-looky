@@ -1,0 +1,111 @@
+
+.scope-relpath {
+    font-family: inconsolata-dz;
+    font-size: 14px;
+    margin-left: 8px;
+}
+.scope-name[data-node-type="FunctionDeclaration"] {
+    background:green;
+    color:white;
+}
+.scope-name[data-node-type="FunctionExpression"] {
+    background:hsl(220,30%,80%);
+}
+.scope-name[data-node-type="CatchClause"] {
+    background:red;
+    color:white;
+}
+.scope-name[data-node-type="Program"] {
+    background:hsl(0,0%,50%);
+    color:white;
+}
+.scope-name {
+    border-radius:2px;
+    padding: 4px;
+    font-family: georgia;
+    font-size:24px;
+    letter-spacing:1px;
+    color: black;
+    display: inline-block;
+    vertical-align:middle;
+}
+.scope-size {
+    display: inline-block;
+    vertical-align:middle;
+    overflow:hidden;
+    background: hsl(0,0%,30%);
+    text-align:center;
+    border-radius:10000px;
+    box-shadow: 0 0 3px 2px hsla(0,0%,100%,0.3);
+    margin: 0 12px;
+    font-family:inconsolata-dz;
+    font-size:18px;
+    color:white;
+}
+.scope-no-name {
+    color: hsl(0,0%,50%);
+}
+.scope:not(:first-child) {
+    margin-top: 8px;
+}
+.scope-list:not(:first-child) {
+    margin-top: 8px;
+}
+.scope-list {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.variable-value {
+    color: black;
+    display:inline-block;
+    vertical-align:middle;
+}
+.variable-type {
+    font-family:georgia;
+    font-size:14px;
+    color: hsl(0,0%,80%);
+    display:inline-block;
+    vertical-align:middle;
+}
+.variable-name {
+    color: hsl(200,40%,50%);
+}
+.variable-name.variable-no-init {
+    color: hsl(35,80%,50%);
+}
+.variable-list {
+    list-style:none;
+    margin:0;
+    margin-left: 80px;
+    padding:0;
+    font-family: inconsolata-dz;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.scope > .scope-list {
+    margin-left: 80px;
+}
+#app-window-fullscreen .scope-view > .scope > .scope-relpath {
+    display:none;
+}
+
+#app-window-fullscreen .column:nth-child(1) {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    overflow: auto;
+}
+#app-window-fullscreen .column:nth-child(2) {
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    overflow: auto;
+}
+
+.pre-scope {
+    border: solid 1px black;
+    border-right: 0;
+}

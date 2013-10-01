@@ -1,0 +1,39 @@
+
+.hidden {
+    visibility:hidden;
+}
+.row {
+    overflow:hidden;
+    white-space:nowrap;
+}
+.column {
+    display:inline-block;
+    vertical-align:top;
+    white-space:normal;
+}
+.width-70-percent {
+    width:70%;
+}
+.width-30-percent {
+    width:30%;
+}
+pre {
+    background:hsl(0,0%,85%);
+    color:hsl(0,0%,50%);
+    line-height: 1.6;
+    font-family:menlo;
+    font-weight: bold;
+    font-size:18px;
+    white-space:pre !important;
+    overflow: auto;
+    margin:0;
+    padding:8px;
+    tab-size: 4;
+}
+.inline-block {
+    display:inline-block;
+}
+
+.align-top {
+    vertical-align:top;
+}

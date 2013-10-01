@@ -1,0 +1,12 @@
+{
+    "name": "nw-demo",
+    "main": "index.html",
+    "window": {
+        "toolbar": false,
+        "width": 1200,
+        "height": 600
+    },
+    "webkit": {
+        "plugin": true
+    }
+}

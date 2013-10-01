@@ -1,0 +1,27 @@
+#loadCode {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:24px;
+    font-size:24px;
+    line-height:24px;
+    opacity:0;
+}
+#loadCodeUnderlay {
+    position:fixed;
+    text-align:center;
+    line-height:24px;
+    font-family: tahoma;
+    font-size:14px;
+    color:hsl(0,0%,30%);
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background:hsl(0,0%,75%);
+    height:24px;
+}
+#loadCodeUnderlay:empty:before {
+    content: 'Drop a file in here.';
+}
